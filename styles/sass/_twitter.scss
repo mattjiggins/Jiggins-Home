@@ -1,0 +1,28 @@
+#twitter {
+  $small: new-breakpoint(max-width 700px);
+  $medium: new-breakpoint(min-width 701px);
+  $larger: new-breakpoint(min-width 1200px);
+  
+  @include outer-container(100%);
+  
+  @include media($medium) {
+    margin-bottom: 50px;
+  }
+  padding: 20px;
+    
+  .tweet {
+    font-size: 1em;
+    margin: 0; padding: 0;
+    @include media($medium) {
+      @include span-columns(3);
+      height: 190px;
+      margin: 0; padding: 10px;
+    }
+    @include media(  $larger) {
+      @include span-columns(2);
+      margin: 0; padding: 10px;
+      font-size: 1em;
+      height: 190px;
+    }
+  }
+}

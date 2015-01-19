@@ -1,0 +1,48 @@
+
+#showcase-cpd {
+  @import "showcase1-browsers";
+  
+  $bp-showcase--lg: new-breakpoint(min-width 900px 12);
+
+  border: 1px solid #cdcdcd;
+  background: white;
+  padding: 15px 20px;
+  margin-bottom: 40px;
+
+  @include outer-container;
+  @include media($bp-showcase--lg) {
+    padding: 30px 10px 50px 10px;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(226, 226, 226, 0.5);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(226, 226, 226, 0.5);
+    box-shadow:         7px 7px 5px 0px rgba(226, 226, 226, 0.5);
+  }
+  
+  h2 {
+    @include media($bp-showcase--lg) {
+      margin-bottom: 50px
+    }
+  }
+  
+  // Details
+  
+  .details {
+    padding: 0px 10px;
+    @include media($bp-showcase--lg) {
+      padding: 0px 80px;
+    }
+    
+    aside { 
+      @include span-columns(12);
+      @include media($bp-showcase--lg) {
+        @include span-columns(5);
+      }
+    }
+    article { 
+      @include span-columns(12);
+      @include media($bp-showcase--lg) {
+        @include span-columns(7);
+      }
+    }
+  }
+  
+}

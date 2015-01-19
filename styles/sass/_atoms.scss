@@ -1,0 +1,41 @@
+button.pull-tab {
+  border: none;
+}
+
+.pull-tab {
+  padding: 20px 5px 7px 5px;
+  top: 0px; 
+  width: 35px;
+  text-align: center;
+  float: right;
+  margin-left: 5px;
+  background: white;
+  z-index: 10;
+  a {
+    color: $text-black;
+    &:hover {
+      color: $link-hover;
+    }
+  }
+}
+
+.button, button {
+ @include button(flat, $accentColor);
+ display: inline-block;
+ font-size: .7em;
+ line-height: $base-line-height;
+ margin-bottom: .3em;
+ margin-right: 0.5em;
+ outline: none;
+ padding: .3em 1em;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.img-fit {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

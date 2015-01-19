@@ -1,0 +1,44 @@
+	
+			
+<!-- hBar Templates -->
+
+	<script id="app-flickr" type="text/x-handlebars-template">
+		<a href="https://www.flickr.com/photos/{{owner}}/{{id}}" class=""  target="_blank">
+			<img class="flickr-photo" src="https://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}_s.jpg" alt="{{title}}">
+		</a>
+	</script>
+	<script id="app-tweets" type="text/x-handlebars-template">
+		<div class="tweet">
+			<p>{{{formatTweet text}}} &mdash; <small>{{dateFormat created_at}}</small> <a href="http://twitter.com/{{user.screen_name}}/status/{{id_str}}" class="action"><i class="fa fa-retweet"></i></a> </p>
+		</div>
+	</script>
+
+	<script id="app-instagram" type="text/x-handlebars-template">		
+		<a href="{{link}}" class="thumbnail col-xs-1" target="_blank">
+			<img src="{{images.low_resolution.url}}" alt="{{caption.text}}" class="img-responsive" />
+		</a>
+	</script>	
+
+<!-- /End hBar Templates -->	
+			
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="scripts/min/jquery-match-heights-min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="scripts/min/application-base-min.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="scripts/min/application-backbone-min.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+			    app = new BackboneSocialFeeds();
+			
+				photos.fetch({ reset: true });
+				tweets.fetch({ reset: true });
+				// instagrams.fetch({ reset: true });
+			
+			    Backbone.history.start({pushState: false});
+			});
+		</script>
+
+	</body>
+</html>

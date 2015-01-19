@@ -1,0 +1,8 @@
+// @codekit-prepend "_underscore.js"
+// @codekit-prepend "_backbone.js"
+// @codekit-prepend "_hbars.js"
+// @codekit-prepend "_moment.js"
+// @codekit-prepend "_twitter-app.js"
+// @codekit-prepend "_flickr-app.js"
+// @codekit-prepend "_instagram-app.js" 
+// @codekit-prepend "_backbone-apps.js"

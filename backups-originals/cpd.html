@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Matt Jiggins - Design, Develop, Deploy | Photography</title>
+		
+		<!-- Typekit Goodness -->
+		<script src="//use.typekit.net/kwz4cdk.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		
+		<!-- Temporary - Load BS and FA from CDN -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" media="screen">
+		
+		<!-- Compiled CSS File -->
+		<link rel="stylesheet" href="styles/css/application.css" type="text/css" media="screen">
+
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<article id="details">
+			<section id="details-heading">
+				<div class="container">
+					<a href="/" class="pull-tab bg-grey">
+						<i class="fa fa-home"></i>
+					</a>
+					
+					<a href="#" class="pull-tab bg-grey" data-toggle="modal" data-target="#myModal">
+						<i class="fa fa-envelope-o"></i>
+					</a>
+					
+					<h1><small>Project Details</small><br>CPD Website Redesign</h1>
+				</div>
+			</section>
+			<section id="details-content">
+				<div class="container">
+					
+					<section class="details-content--row">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="images/CPD-Main-Process/CPD-Main--Client-Initial-Concepts.jpg" class="img-responsive" alt="CPD Main Client Initial Concepts">
+							</div>
+							<div class="col-md-6">
+								<h2 class="details-content--row-title">Initial Presentation</h2>
+								<p>The website had to be responsive. To accomplish this I tried an <a href="http://bradfrost.com/" target="_blank">Atomic Design</a> approach. Presenting the client with pieces of what might be on the website, in horizontal rather than vertical format. This helped focus the client on content pieces.</p>
+								
+								<p>During discussions with the CPD communications department it became clear that there were many different and competing sections within the organization. Each section had a slightly different goal or objective. However, ultimately the organization is about "educational events". There are two distinct groups: Organizers (Educators) and Attendees (Doctors and Other Health Professionals).</p>
+								
+								<p>My thought was each group needs its own "action word". Educators want to <strong>Educate</strong> and Attendees want to <strong>Learn</strong>.</p>
+								
+								<p>The third primary section within the department was <strong>Research</strong>. This was a strong enough word to remain as it was.</p>
+								<p>Finally, after some debate, and to fit with their separately discovered "tag" the fourth action word was <strong>Transform</strong>.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="details-content--row">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="images/CPD-Main-Process/CPD-Main--Client-Initial-Mockup.jpg" class="img-responsive" alt="CPD Main Client Initial Mockup">
+							</div>
+							<div class="col-md-6">
+								<h2 class="details-content--row-title">A Mockup</h2>
+								<p>Now we have our "Action" words - do we need to explain them? The initial design mockup showed 6 action words with some explainations in each box. The idea of matching Colour and Action also starts to be finalized. Red (strongest) represents the Learn or Event Registration.</p>
+								<p><strong>At this stage a basic HTML, SASS framework is created. Design comes out of Photoshop and starts in the Browser.</strong></p>
+								<p>However, presenting the client a design inside a computer seems to greatly enhance acceptance.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="details-content--row">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-sm-4">
+										<img src="images/CPD-Main-Process/CPD-Main--Option1.jpg" class="img-responsive" alt="CPD Main Option1">
+										<p class="text-muted"><strong>One</strong></p>
+									</div>
+									<div class="col-sm-4">
+										<img src="images/CPD-Main-Process/CPD-Main--Option2.jpg" class="img-responsive" alt="CPD Main Option2">
+										<p class="text-muted"><strong>Two</strong></p>
+									</div>
+									<div class="col-sm-4">
+										<img src="images/CPD-Main-Process/CPD-Main--Option3.jpg" class="img-responsive" alt="CPD Main Option3">
+										<p class="text-muted"><strong>Three</strong></p>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-md-6">
+								<h2 class="details-content--row-title">The Options</h2>
+								<p>Time to present the client with three options. <strong>Option One</strong> is the revised version of the initial mockup. <strong>Option Two</strong> is a client proposed option to "move the events listing up to the top". <strong>Option Three</strong> is a radical re-design of the action words.</p>
+								<p>Option Three goes to full development.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="details-content--row">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="images/CPD-Main-Process/CPD-Main-Search-API.jpg" class="img-responsive" alt="CPD Main Search API">
+							</div>
+							<div class="col-md-6">
+								<h2 class="details-content--row-title">The Build</h2>
+								<p>Initial build will be in WordPress alone, however the live site presented a major obsticle: Event listing must occur on the homepage. In the past a simple link to their Event Management System was used.</p>
+								<p>To do this I created a simple read-only JSON REST Api to their existing MySQL data. Their event management system was written in Ruby. <a href="http://www.slimframework.com/">SlimFramework</a> was perfect for this task.</p>
+								<p>Initally the code was written in basic JS/jQuery. Recently <a href="http://backbonejs.org/" target="_blank">BackboneJS</a> has been used to cleanup and simplify the events search listing.</p>
+								
+							</div>
+						</div>
+					</section>
+
+					<section class="details-content--row">
+								<h2 class="details-content--row-title text-center">The Sell</h2>
+								<p class=" text-center">It was crucial to do a sales job on the delivery of the site, both for the organization and for me.</p>
+								<p class=" text-center"><img src="images/CPD-Main-Process/CPD-Sales.jpg" width="900" height="650" alt="CPD Sales"></p>
+						
+					</section>
+					
+				</div>
+
+				
+				
+			</section>
+		</article>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="scripts/min/application-base-min.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+</html>

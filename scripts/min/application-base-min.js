@@ -1,0 +1,1 @@
+$(function(){$(".letter").matchHeight()});

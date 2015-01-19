@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Matt Jiggins - Design, Develop, Deploy | Photography</title>
+		
+		<!-- Typekit Goodness -->
+		<script src="//use.typekit.net/kwz4cdk.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		
+		<!-- Temporary - Load BS and FA from CDN -->
+		<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" media="screen">
+		 -->
+		<!-- Compiled CSS File -->
+		<link rel="stylesheet" href="styles/css/application.css" type="text/css" media="screen">
+
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head><section id="hero">
+	<div class="letter-group">
+		<div class="letter h">
+			<h2>Hello.</h2>
+			<p>My name is <strong>Matt Jiggins</strong>. I am a frontend designer / developer from Canada based in the <strong>Netherlands</strong>.</p>
+			<p>I have experience with WordPress, PHP, SASS, BackboneJS.</p>
+		</div>
+		<div class="letter e">
+			<img src="images/Matt-Jiggins-Left.jpg" class="img-fit img-circle" alt="Matt Jiggins Looking Left">
+		</div>
+	</div>
+	<div class="letter-group">
+		<div class="letter l">
+			<p>Tw</p>
+			<p>Fl</p>
+		</div>
+		
+		<div class="letter l">
+			<p>Tw</p>
+			<p>Fl</p>
+		</div>
+		
+		<div class="letter o">
+			<img src="images/Matt-Jiggins-Camera.jpg" class="img-fit img-circle" alt="Matt Jiggins With Leica Camera">
+		</div>
+	</div>
+</section><!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Matt Jiggins - Design, Develop, Deploy | Photography</title>
+		
+		<!-- Typekit Goodness -->
+		<script src="//use.typekit.net/kwz4cdk.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		
+		<!-- Temporary - Load BS and FA from CDN -->
+		<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" media="screen">
+		 -->
+		<!-- Compiled CSS File -->
+		<link rel="stylesheet" href="styles/css/application.css" type="text/css" media="screen">
+
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+<section id="showcase-cpd">
+	
+	<h2>Recent Work Showcase</h2>
+	
+	<div class="container">
+		<div class="browsers">
+		  <div class="browser">
+		    <div class="browser-top-bar">
+		      <div class="browser-circle"></div>
+		      <div class="browser-circle"></div>
+		      <div class="browser-circle"></div>
+		    </div>
+		  <div class="browser-content"></div>
+		  </div>
+		  <div class="browser">
+		    <div class="browser-top-bar">
+		      <div class="browser-circle"></div>
+		      <div class="browser-circle"></div>
+		      <div class="browser-circle"></div>
+		    </div>
+		    <div class="browser-content">
+		    </div>
+		  </div>
+		  <div class = "browser">
+		    <div class="browser-top-bar">
+		      <div class="browser-circle"></div>
+		      <div class="browser-circle"></div>
+		      <div class="browser-circle"></div>
+		    </div>
+		    <div class="browser-content"></div>
+		  </div>
+		</div>
+		<div class="cover"></div>		
+	</div>
+	
+	<div class="details">
+		<aside>
+			<h4>University of Toronto</h4>
+			<p>Continuing Professional Development, Faculty of Medicine has been my main client for the past 7 years. I have helped them design and deploy over 89 WordPress websites.</p>
+			<a href="http://www.cpd.utoronto.ca" class="button" target="_blank">Existing Site</a>
+		</aside>
+		<article>
+			<h4>Project</h4>
+			<p>Redesign existing website to more prominantly feature upcomming events and integrate previously 	external blog.</p>
+	
+			<h4>Role</h4>
+			<p>From design to deployment and maintenance.</p>
+
+			<h4>Technologies</h4>
+			<p>Wordpress, SASS, SlimFramework PHP Api, JSON, BackboneJS</p>
+	
+			 <a href="cpd.html" class="button">How the site was built</a>
+		</article>
+	</div>
+</section>	
+	
+			
+<!-- hBar Templates -->
+
+	<script id="app-flickr" type="text/x-handlebars-template">
+		<a href="https://www.flickr.com/photos/{{owner}}/{{id}}" class="thumbnail col-xs-1"  target="_blank">
+			<img src="https://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}_s.jpg" alt="{{title}}">
+		</a>
+	</script>
+
+
+	<script id="app-tweets" type="text/x-handlebars-template">
+		<div class="tweet">
+			<p>{{{formatTweet text}}} &mdash; <small>{{dateFormat created_at}}</small> <a href="http://twitter.com/{{user.screen_name}}/status/{{id_str}}" class="action"><i class="fa fa-retweet"></i></a> </p>
+		</div>
+	</script>
+
+	<script id="app-instagram" type="text/x-handlebars-template">		
+		<a href="{{link}}" class="thumbnail col-xs-1" target="_blank">
+			<img src="{{images.low_resolution.url}}" alt="{{caption.text}}" class="img-responsive" />
+		</a>
+	</script>	
+
+<!-- /End hBar Templates -->	
+			
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="scripts/min/application-base-min.js" type="text/javascript" charset="utf-8"></script>
+
+<!--		<script src="scripts/min/application-backbone-min.js" type="text/javascript" charset="utf-8"></script>
+		 -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+			    //app = new BackboneSocialFeeds();
+			
+				// photos.fetch({ reset: true });
+				//tweets.fetch({ reset: true });
+				// instagrams.fetch({ reset: true });
+			
+			    //Backbone.history.start({pushState: false});	
+			});
+		</script>
+
+	</body>
+</html><!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Matt Jiggins - Design, Develop, Deploy | Photography</title>
+		
+		<!-- Typekit Goodness -->
+		<script src="//use.typekit.net/kwz4cdk.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		
+		<!-- Temporary - Load BS and FA from CDN -->
+		<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" media="screen">
+		 -->
+		<!-- Compiled CSS File -->
+		<link rel="stylesheet" href="styles/css/application.css" type="text/css" media="screen">
+
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+<section id="showcase-smaller">
+	
+	<h2>Other Works</h2>
+
+	<div class="cards">
+
+		<!-- START CPD API CARD -->
+		<div class="card">
+			<div class="card-image">
+				<img src="/images/Development--CPD-Events-Search-API.png" alt="">
+			</div>
+			<div class="card-header">
+				CPD Event Search
+			</div>
+			<div class="card-copy">
+				<p>Part of the redesign of the <a href="http://www.cpd.utoronto.ca" target="_blank">CPD Website</a> identified "Event Search" as a core-functionality.</p>
+				<p>A simple read-only API was developed using PHP Slimframework. The data is stored in MySQL as part of their existing Event Management application. Using AWS Route53 and Elasticache results are queried and returned as JSON.</p>
+				<a href="http://www.cpd.utoronto.ca" target="_blank" class="button">Visit Site</a>
+			</div>
+			<div class="card-stats">
+				<ul>
+					<li>Langs<span>BackboneJS, PHP<br>Slimframework (API)</span></li>
+					<li>Me<span>Idea to<br>Deployment</span></li>
+				</ul>
+			</div>
+		</div>
+		<!-- END CPD API CARD -->
+
+		<!-- START QUEENS CARD -->
+		<div class="card">
+			<div class="card-image">
+				<img src="/images/Website--Queens.jpg" alt="">
+			</div>
+			<div class="card-header">
+				Queens University
+			</div>
+			<div class="card-copy">
+				<p><a href="http://usw.ca" target="_blank">United Steelworkers</a> is another long standing client of mine.</p>
+				<p>I primarily develop campaign or action websites for them. They are currently running a membership drive at Queens University in Canada.</p>
+				<a href="http://www.oliviachow.ca" target="_blank" class="button">Visit Site</a>
+			</div>
+			<div class="card-stats">
+				<ul>
+					<li>Langs<span>HTML/SASS,<br>Wordpress</span></li>
+					<li>Me<span>Idea to<br>Deployment</span></li>
+					<li>3wks<span>Time to Live</span></li>
+				</ul>
+			</div>
+		</div>
+		<!-- END QUEENS CARD -->
+
+
+
+		<!-- START OC CARD -->
+		<div class="card">
+			<!-- <div class="ribbon-wrapper"><div class="ribbon">&nbsp;</div></div> -->
+			<div class="card-image">
+				<img src="/images/Website--Olivia-Chow" alt="">
+			</div>
+			<div class="card-header">
+				Olivia Chow Website
+			</div>
+			<div class="card-copy">
+				<p>Friend and former Member of Parliament was looking to transition from her mayoral campaign website to a personal page.</p>
+				<p>Website updates weren't a priority so we focus on twitter and Instagram media feeds.</p>
+				<a href="http://www.oliviachow.ca" target="_blank" class="button">Visit Site</a>
+			</div>
+			<div class="card-stats">
+				<ul>
+					<li>Langs<span>HTML/SASS,<br>PHP, Backbone</span></li>
+					<li>Me<span>Idea to<br>Deployment</span></li>
+					<li>1wk<span>Time to Live</span></li>
+				</ul>
+			</div>
+		</div>
+		<!-- END OC CARD -->
+
+	</div>
+</section>	
+	
+			
+<!-- hBar Templates -->
+
+	<script id="app-flickr" type="text/x-handlebars-template">
+		<a href="https://www.flickr.com/photos/{{owner}}/{{id}}" class="thumbnail col-xs-1"  target="_blank">
+			<img src="https://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}_s.jpg" alt="{{title}}">
+		</a>
+	</script>
+
+
+	<script id="app-tweets" type="text/x-handlebars-template">
+		<div class="tweet">
+			<p>{{{formatTweet text}}} &mdash; <small>{{dateFormat created_at}}</small> <a href="http://twitter.com/{{user.screen_name}}/status/{{id_str}}" class="action"><i class="fa fa-retweet"></i></a> </p>
+		</div>
+	</script>
+
+	<script id="app-instagram" type="text/x-handlebars-template">		
+		<a href="{{link}}" class="thumbnail col-xs-1" target="_blank">
+			<img src="{{images.low_resolution.url}}" alt="{{caption.text}}" class="img-responsive" />
+		</a>
+	</script>	
+
+<!-- /End hBar Templates -->	
+			
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="scripts/min/application-base-min.js" type="text/javascript" charset="utf-8"></script>
+
+<!--		<script src="scripts/min/application-backbone-min.js" type="text/javascript" charset="utf-8"></script>
+		 -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+			    //app = new BackboneSocialFeeds();
+			
+				// photos.fetch({ reset: true });
+				//tweets.fetch({ reset: true });
+				// instagrams.fetch({ reset: true });
+			
+			    //Backbone.history.start({pushState: false});	
+			});
+		</script>
+
+	</body>
+</html>	
+			
+<!-- hBar Templates -->
+
+	<script id="app-flickr" type="text/x-handlebars-template">
+		<a href="https://www.flickr.com/photos/{{owner}}/{{id}}" class="thumbnail col-xs-1"  target="_blank">
+			<img src="https://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}_s.jpg" alt="{{title}}">
+		</a>
+	</script>
+
+
+	<script id="app-tweets" type="text/x-handlebars-template">
+		<div class="tweet">
+			<p>{{{formatTweet text}}} &mdash; <small>{{dateFormat created_at}}</small> <a href="http://twitter.com/{{user.screen_name}}/status/{{id_str}}" class="action"><i class="fa fa-retweet"></i></a> </p>
+		</div>
+	</script>
+
+	<script id="app-instagram" type="text/x-handlebars-template">		
+		<a href="{{link}}" class="thumbnail col-xs-1" target="_blank">
+			<img src="{{images.low_resolution.url}}" alt="{{caption.text}}" class="img-responsive" />
+		</a>
+	</script>	
+
+<!-- /End hBar Templates -->	
+			
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="scripts/min/application-base-min.js" type="text/javascript" charset="utf-8"></script>
+
+<!--		<script src="scripts/min/application-backbone-min.js" type="text/javascript" charset="utf-8"></script>
+		 -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+			    //app = new BackboneSocialFeeds();
+			
+				// photos.fetch({ reset: true });
+				//tweets.fetch({ reset: true });
+				// instagrams.fetch({ reset: true });
+			
+			    //Backbone.history.start({pushState: false});	
+			});
+		</script>
+
+	</body>
+</html>
