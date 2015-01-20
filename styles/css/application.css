@@ -555,7 +555,7 @@ button.pull-tab {
     z-index: 999; }
     @media screen and (min-width: 37.5em) {
       #showcase-cpd .cover {
-        height: 3em; } }
+        height: 3.5em; } }
   #showcase-cpd:after {
     content: "";
     display: table;

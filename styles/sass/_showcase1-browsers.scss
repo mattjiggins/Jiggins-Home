@@ -144,7 +144,7 @@
   position: relative;
   width: 100%;
   @include media(em(600)) {
-    height: 3em;
+    height: 3.5em;
   }
   z-index: 999;
 }
