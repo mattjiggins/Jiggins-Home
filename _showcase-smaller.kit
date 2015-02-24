@@ -14,12 +14,14 @@
 			</div>
 			<div class="card-copy">
 				<p>Part of the redesign of the <a href="http://www.cpd.utoronto.ca" target="_blank">CPD Website</a> identified "Event Search" as a core-functionality.</p>
-				<p>A simple read-only API was developed using PHP Slimframework. The data is stored in MySQL as part of their existing Event Management application. Using AWS RDS and Elasticache results are queried and returned as JSON.</p>
-				<a href="http://www.cpd.utoronto.ca" target="_blank" class="button">Visit Site</a>
+				<p>A simple read-only API was developed using NodeJS. The data is stored in MySQL (AWS RDS) as part of their existing Event Management application. Initial API written using PHP SlimFramework with AWS Elasticache, but moved to NodeJS to improve performance.</p>
+				
+				<p><a href="http://eventsapi.cpdtoronto.ca/cpdevents/1/" target="_blank" class="button">PHP (JSON)</a></p>
+				<p><a href="http://eventsapi-node.cpdtoronto.ca/api/1/events/" target="_blank" class="button">Node (JSON)</a> </p>
 			</div>
 			<div class="card-stats">
 				<ul>
-					<li>Langs<span>BackboneJS, PHP<br>Slimframework (API)</span></li>
+					<li>Langs<span>BackboneJS, NodeJS, PHP<br>Slimframework</span></li>
 					<li>Me<span>Idea to<br>Deployment</span></li>
 				</ul>
 			</div>

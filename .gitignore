@@ -2,3 +2,4 @@ bower_components/*
 config.codekit
 inc/keys.php
 inc/cache/*
+styles/sass/.sass-cache/*

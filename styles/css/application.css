@@ -1,8 +1,4 @@
 @charset "UTF-8";
-/* Neat 1.7.0
- * http://neat.bourbon.io
- * Copyright 2012-2014 thoughtbot, inc.
- * MIT License */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -124,10 +120,10 @@ body {
 
 .grid-items {
   -webkit-font-smoothing: antialiased; }
-  .grid-items:after {
+  .grid-items::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
   .grid-items .grid-item {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -331,10 +327,10 @@ button.pull-tab {
   margin-right: auto;
   margin-bottom: 20px;
   padding-top: 10px; }
-  #hero:after {
+  #hero::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
   @media screen and (min-width: 521px) {
     #hero {
       max-width: 70%;
@@ -342,10 +338,10 @@ button.pull-tab {
       margin-right: auto;
       margin-bottom: 80px;
       padding-top: 100px; }
-      #hero:after {
+      #hero::after {
+        clear: both;
         content: "";
-        display: table;
-        clear: both; } }
+        display: table; } }
   @media screen and (min-width: 950px) {
     #hero {
       max-width: 68em;
@@ -353,10 +349,10 @@ button.pull-tab {
       margin-right: auto;
       margin-bottom: 100px;
       padding-top: 200px; }
-      #hero:after {
+      #hero::after {
+        clear: both;
         content: "";
-        display: table;
-        clear: both; } }
+        display: table; } }
   #hero .letter-group {
     float: left;
     display: block;
@@ -440,6 +436,127 @@ button.pull-tab {
       @media screen and (min-width: 950px) {
         #hero .o .period {
           right: -35px; } }
+
+.modal h1 {
+  margin: 0; }
+.modal p {
+  color: #565656;
+  line-height: 1.5; }
+.modal label {
+  cursor: pointer;
+  margin-bottom: 0; }
+.modal label img {
+  border-radius: 150px;
+  display: block;
+  max-width: 300px; }
+.modal .modal-state {
+  display: none; }
+.modal .modal-trigger {
+  padding: 0.8em 1em; }
+.modal .modal-window {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  padding-top: 0.6em;
+  text-align: left;
+  visibility: hidden;
+  z-index: 99999999999; }
+  @media screen and (min-width: 53.75em) {
+    .modal .modal-window {
+      padding-top: 2em; } }
+  .modal .modal-window .modal-bg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    cursor: pointer; }
+.modal .modal-close {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  height: 1.5em;
+  width: 1.5em;
+  background: white;
+  cursor: pointer; }
+  .modal .modal-close:after, .modal .modal-close:before {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 1.5em;
+    width: 0.15em;
+    background: #DDD;
+    content: '';
+    display: block;
+    margin: -3px 0 0 -1px; }
+  .modal .modal-close:hover:after, .modal .modal-close:hover:before {
+    background: #c4c4c4; }
+  .modal .modal-close:before {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+.modal .modal-inner {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  background: white;
+  border-radius: 3px;
+  margin-top: 0;
+  margin: auto;
+  max-height: 95%;
+  overflow: auto;
+  padding: 2em;
+  position: relative;
+  width: 95%; }
+  @media screen and (min-width: 40em) {
+    .modal .modal-inner {
+      max-height: 90%;
+      padding: 2em;
+      width: 60%; } }
+  @media screen and (min-width: 53.75em) {
+    .modal .modal-inner {
+      width: 50%; } }
+  .modal .modal-inner h3 {
+    color: #565656;
+    margin-bottom: 0.6em;
+    text-align: left;
+    text-transform: capitalize; }
+  .modal .modal-inner .modal-intro {
+    font-weight: 800; }
+  .modal .modal-inner .modal-content {
+    color: #565656;
+    line-height: 2 !important; }
+  .modal .modal-inner a.cta {
+    color: white;
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-top: 1em; }
+    .modal .modal-inner a.cta:last-child {
+      padding: 0 2em; }
+.modal .modal-state:checked + .modal-window {
+  opacity: 1;
+  visibility: visible; }
+.modal .modal-state:checked + .modal-window .modal-inner {
+  top: 0.5em; }
+
+.modal-open {
+  overflow: hidden; }
 
 #showcase-cpd {
   border: 1px solid #cdcdcd;
@@ -556,10 +673,10 @@ button.pull-tab {
     @media screen and (min-width: 37.5em) {
       #showcase-cpd .cover {
         height: 3.5em; } }
-  #showcase-cpd:after {
+  #showcase-cpd::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
   @media screen and (min-width: 900px) {
     #showcase-cpd {
       padding: 30px 10px 50px 10px;
@@ -747,10 +864,10 @@ button.pull-tab {
       background-color: #f7f7f7; }
       #showcase-smaller .card:active .card-header {
         background-color: #f7f7f7; }
-  #showcase-smaller:after {
+  #showcase-smaller::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
   @media screen and (min-width: 900px) {
     #showcase-smaller {
       padding: 30px 10px 50px 10px; } }
@@ -769,10 +886,10 @@ button.pull-tab {
   margin-left: auto;
   margin-right: auto;
   padding: 20px; }
-  #twitter:after {
+  #twitter::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
   @media screen and (min-width: 701px) {
     #twitter {
       margin-bottom: 50px; } }
