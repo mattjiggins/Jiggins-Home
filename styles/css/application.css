@@ -924,25 +924,19 @@ button.pull-tab {
 
 #flickr {
   padding: 0px; }
-  #flickr .flickr-stream {
-    height: 420px;
-    overflow-y: hidden; }
-    #flickr .flickr-stream .flickr-photo {
-      margin: 0px;
-      padding: 0px;
-      float: left;
-      width: 25%; }
-      @media screen and (max-width: 520px) {
-        #flickr .flickr-stream .flickr-photo {
-          width: 25%; } }
-      @media screen and (min-width: 521px) {
-        #flickr .flickr-stream .flickr-photo {
-          width: 20%; } }
-      @media screen and (min-width: 950px) {
-        #flickr .flickr-stream .flickr-photo {
-          width: 20%; } }
-      #flickr .flickr-stream .flickr-photo:hover {
-        -webkit-filter: sepia(1); }
+  #flickr .flickr-stream .flickr-photo {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 25%; }
+    @media screen and (min-width: 767px) {
+      #flickr .flickr-stream .flickr-photo {
+        width: 20%; } }
+    @media screen and (min-width: 1400px) {
+      #flickr .flickr-stream .flickr-photo {
+        width: 10%; } }
+    #flickr .flickr-stream .flickr-photo:hover {
+      -webkit-filter: sepia(1); }
 
 #details-heading {
   background: #f1f1f1;
