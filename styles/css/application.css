@@ -17,7 +17,7 @@ body {
   font-feature-settings: "kern", "liga", "frac", "pnum";
   -webkit-font-smoothing: antialiased;
   background-color: white;
-  color: #565656;
+  color: #071a16;
   font-family: "freight-sans-pro", "Helvetica Neue", "Helvetica", Arial, Sans-Serif;
   font-size: 16px;
   line-height: 1.5; }
@@ -105,17 +105,18 @@ hr {
 
 blockquote {
   border-left: 2px solid #DDD;
-  color: #7c7c7c;
+  color: #175649;
   margin: 1.5em 0;
   padding-left: 0.75em; }
 
 cite {
-  color: #969696;
+  color: #227e6b;
   font-style: italic; }
   cite:before {
     content: "\2014 \00A0"; }
 
 body {
+  background: #ffffff;
   margin: 0px; }
 
 .grid-items {
@@ -151,7 +152,7 @@ body {
   position: relative;
   text-align: center; }
   .tooltip-item p {
-    color: #565656;
+    color: #071a16;
     line-height: 1.5;
     margin: 0; }
   .tooltip-item:focus, .tooltip-item:hover .tooltip {
@@ -169,7 +170,7 @@ body {
     background: #fff;
     border-radius: 3px;
     box-shadow: 0 2px 2px silver;
-    color: #565656;
+    color: #071a16;
     font-size: 0.9em;
     line-height: 1.5em;
     margin: 0 auto;
@@ -253,7 +254,7 @@ button.pull-tab {
   .side-image button {
     -webkit-font-smoothing: antialiased; }
   .side-image p {
-    color: #565656;
+    color: #071a16;
     line-height: 1.5; }
   @media screen and (min-width: 53.75em) {
     .side-image {
@@ -406,11 +407,11 @@ button.pull-tab {
     #hero .l:last-child {
       margin-right: 0; }
     #hero .l .content {
-      border: 1px solid #cdcdcd;
+      background: #f1edea;
       height: 100%;
       padding-top: 40px; }
     #hero .l a {
-      color: #565656;
+      color: #071a16;
       font-weight: 300;
       font-size: 1.5em; }
       #hero .l a:hover {
@@ -425,7 +426,7 @@ button.pull-tab {
       margin-right: 0; }
     #hero .o .period {
       position: absolute;
-      background: #565656;
+      background: #071a16;
       width: 20px;
       height: 20px;
       border-radius: 50%;
@@ -440,7 +441,7 @@ button.pull-tab {
 .modal h1 {
   margin: 0; }
 .modal p {
-  color: #565656;
+  color: #071a16;
   line-height: 1.5; }
 .modal label {
   cursor: pointer;
@@ -533,14 +534,14 @@ button.pull-tab {
     .modal .modal-inner {
       width: 50%; } }
   .modal .modal-inner h3 {
-    color: #565656;
+    color: #071a16;
     margin-bottom: 0.6em;
     text-align: left;
     text-transform: capitalize; }
   .modal .modal-inner .modal-intro {
     font-weight: 800; }
   .modal .modal-inner .modal-content {
-    color: #565656;
+    color: #071a16;
     line-height: 2 !important; }
   .modal .modal-inner a.cta {
     color: white;
@@ -837,7 +838,7 @@ button.pull-tab {
       #showcase-smaller .card .card-stats ul {
         padding: 0; }
       #showcase-smaller .card .card-stats li {
-        border-right: 1px solid rgba(86, 86, 86, 0.2);
+        border-right: 1px solid rgba(7, 26, 22, 0.2);
         color: #6f99d5;
         display: inline;
         float: left;
@@ -850,7 +851,7 @@ button.pull-tab {
         #showcase-smaller .card .card-stats li:last-child {
           border-right: 0; }
         #showcase-smaller .card .card-stats li span {
-          color: #565656;
+          color: #071a16;
           display: block;
           font-size: .7em;
           font-weight: normal; }
