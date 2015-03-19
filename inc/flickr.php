@@ -7,7 +7,7 @@ include('keys.php');
 error_reporting( 0 );
 
 $user_id = '8466254%40N03';
-$per_page = 100;
+$per_page = 20;
 $feed = "https://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=".$flickrKey."&user_id=".$user_id."&per_page=".$per_page."&format=json&nojsoncallback=1";
 $cache_file = dirname(__FILE__).'/cache/'.'flickr-cache';
 $modified = filemtime( $cache_file );
