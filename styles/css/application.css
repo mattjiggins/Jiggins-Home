@@ -83,7 +83,7 @@ a {
   color: #477DCA;
   text-decoration: none; }
   a:hover {
-    background: #FABE28;
+    background: #FFC107;
     color: #2c5999; }
   a:active, a:focus {
     color: #2c5999;
@@ -162,7 +162,7 @@ a {
       margin: 0 -20px;
       padding: 20px; }
   #leader .contact {
-    background: #FABE28;
+    background: #FFC107;
     margin: 0;
     padding: 5px 0 0 0;
     text-align: center; }
@@ -565,7 +565,7 @@ nav.home {
   padding: 15px 20px; }
   #showcase-smaller .card {
     border: none;
-    border-top: 10px solid #FABE28;
+    border-bottom: 10px solid #FFC107;
     box-shadow: none; }
   #showcase-smaller::after {
     clear: both;
@@ -579,14 +579,17 @@ nav.home {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 50px; }
+  padding: 0; }
   #twitter::after {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (min-width: 1200px) {
+    #twitter {
+      padding: 0 50px; } }
   #twitter .card {
     padding-bottom: 0; }
-  #twitter .card.tweet {
+  #twitter .tweet {
     background: transparent;
     border: none;
     box-shadow: none;
