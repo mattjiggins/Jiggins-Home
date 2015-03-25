@@ -7,9 +7,13 @@
 			<img class="flickr-photo" src="https://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}_q.jpg" alt="{{title}}">
 		</a>
 	</script>
+	
 	<script id="app-tweets" type="text/x-handlebars-template">
-		<div class="tweet">
-			<p>{{{formatTweet text}}} &mdash; <small>{{dateFormat created_at}}</small> <a href="http://twitter.com/{{user.screen_name}}/status/{{id_str}}" class="action"><i class="fa fa-retweet"></i></a> </p>
+		<div class="card tweet">
+			<div class="card-copy">
+				<p>{{{formatTweet text}}} &mdash; <small>{{dateFormat created_at}}</small> <a href="http://twitter.com/{{user.screen_name}}/status/{{id_str}}" class="action"><i class="fa fa-retweet"></i></a> </p>
+			</div>
+			
 		</div>
 	</script>
 
@@ -35,6 +39,7 @@
 				photos.fetch({ reset: true });
 				tweets.fetch({ reset: true });
 				// instagrams.fetch({ reset: true });
+				
 			
 			    Backbone.history.start({pushState: false});
 			});

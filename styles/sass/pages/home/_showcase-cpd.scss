@@ -4,18 +4,19 @@
   
   $bp-showcase--lg: new-breakpoint(min-width 900px 12);
 
-  border: 1px solid #cdcdcd;
-  background: white;
-  padding: 15px 20px;
+  border-top: 10px solid $primaryColor;
+  border-right: 1px solid $primaryColor;
+  border-bottom: 1px solid $primaryColor;
+  border-left: 1px solid $primaryColor;
+  padding: 0 20px 15px 20px;
   margin-bottom: 40px;
+  position: relative;
 
   @include outer-container;
   @include media($bp-showcase--lg) {
-    padding: 30px 10px 50px 10px;
-    -webkit-box-shadow: 7px 7px 5px 0px rgba(226, 226, 226, 0.5);
-    -moz-box-shadow:    7px 7px 5px 0px rgba(226, 226, 226, 0.5);
-    box-shadow:         7px 7px 5px 0px rgba(226, 226, 226, 0.5);
+    padding: 0px 10px 50px 10px;
   }
+
   
   h2 {
     @include media($bp-showcase--lg) {
@@ -26,6 +27,7 @@
   // Details
   
   .details {
+    background: white;
     padding: 0px 10px;
     @include media($bp-showcase--lg) {
       padding: 0px 80px;

@@ -1,0 +1,39 @@
+#twitter {
+  @include outer-container(100%);
+  padding: 0 50px;
+  
+  .card {
+    padding-bottom: 0;
+  }
+  .card.tweet {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0 18px;
+  }
+  
+
+//   @include outer-container(100%);
+//
+//   @include media($medium) {
+//     margin-bottom: 50px;
+//   }
+//   padding: 20px;
+//
+//   .tweet {
+//     font-size: 1em;
+//     margin: 0; padding: 0;
+//     @include media($medium) {
+//       @include span-columns(3);
+//       height: 190px;
+//       margin: 0; padding: 10px;
+//     }
+//     @include media(  $larger) {
+//       @include span-columns(2);
+//       margin: 0; padding: 10px;
+//       font-size: 1em;
+//       height: 190px;
+//     }
+//   }
+}

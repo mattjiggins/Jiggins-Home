@@ -54,32 +54,6 @@
     }
   }
 
-  .ribbon-wrapper {
-    $ribbon-background: $base-accent-color;
-    $ribbon-size: 85px;
-    @include size($ribbon-size);
-    overflow: hidden;
-    position: absolute;
-    right: -1px;
-    top: -1px;
-
-    .ribbon {
-      @include transform(rotate(45deg));
-      background-color: $ribbon-background;
-      box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
-      color: white;
-      font-size: .8em;
-      font-weight: 800;
-      left: -5px;
-      line-height: 1.5em;
-      padding: 2px 7px;
-      position: relative;
-      text-align: center;
-      top: 15px;
-      width: 120px;
-    }
-  }
-
   .card-header {
     @include transition (all 0.2s ease-in-out);
     background-color: $card-header-background;

@@ -20,6 +20,8 @@ BackboneSocialFeeds = Backbone.Router.extend({
 		var $twitterContainer = $('#app-twitterfeed');
 		$('#app-twitterfeed-loading').empty();
 		$twitterContainer.append(this.twitterView.render().el);
+		$('.card.tweet').matchHeight();
+		
 		
 		// console.log ("Flickr App Starting");
 		var $flickrContainer = $('#app-flickrfeed');

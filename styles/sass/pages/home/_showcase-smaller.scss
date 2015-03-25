@@ -1,9 +1,14 @@
 #showcase-smaller {
-  @import "cards";
   
   $bp-showcase--lg: new-breakpoint(min-width 900px 12);
 
   background: white;
+
+  .card {
+    border: none;
+    border-top: 10px solid $yellow;
+    box-shadow: none;
+  }
 
   @include outer-container;
   padding: 15px 20px;
@@ -12,14 +17,5 @@
     padding: 30px 10px 50px 10px;
   }
   
-  h2 {
-    font-size: 1em;
-    font-weight: 400;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    @include media($bp-showcase--lg) {
-      margin-bottom: 50px
-    }
-  } 
+
 }

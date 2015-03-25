@@ -13,7 +13,7 @@ tweets = new TweetsCollection([
 // VIEWS
 
 TweetView = Backbone.View.extend({		
-	className: 'tweets',
+	className: 'cards',
 
 	template: Handlebars.compile($("#app-tweets").html()),
 
@@ -26,8 +26,8 @@ TweetView = Backbone.View.extend({
         _.each(tweets.models, function (tweets) {
             $(this.el).append(this.template(tweets.attributes));
         }, this);
-		
 		return this;
+		
 	},
 });
 
@@ -71,6 +71,5 @@ Handlebars.registerHelper('formatTweet', function(tweet) {
 });
 
 Handlebars.registerHelper('dateFormat', function(tweetDate) {
-	//return moment(tweetDate, 'dd MMM DD HH:mm:ss ZZ YYYY', 'en').format("MMM DD, YYYY hh:mm:ss A");
 	return moment(tweetDate, 'dd MMM DD HH:mm:ss ZZ YYYY', 'en').fromNow();
 });
