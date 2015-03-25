@@ -1,19 +1,24 @@
 @import "bourbon", "neat";
 
-@import "functions";
-@import "variables";
+@import "utils/functions";
+@import "utils/variables";
 
-@import "type";
+@import "base/resets";
+@import "base/type";
 
-@import "contact";
-@import "nav";
-@import "base";
-@import "atoms";
+@import "layout/leader";
+@import "layout/contact";
+@import "layout/nav";
 
-@import "leader";
-@import "showcase-cpd";
-@import "showcase-smaller";
-@import "icons";
+@import "components/images";
+@import "components/buttons";
+@import "components/cards";
 
-@import "twitter";
-@import "flickr";
+@import "base/icons";
+
+@import "pages/home/showcase-cpd";
+@import "pages/home/showcase-smaller";
+
+// put these at bottom for speed.
+@import "layout/twitter";
+@import "layout/flickr"; 

@@ -50,15 +50,15 @@ h4 {
   small { @include small-font($h4-font-size) }
 }
 
-h5 {
-  font-size: $h5-font-size;
-  small { @include small-font($h5-font-size) }
-}
-
-h6 {
-  font-size: $h6-font-size;
-  small { @include small-font($h6-font-size) }
-}
+// h5 {
+//   font-size: $h5-font-size;
+//   small { @include small-font($h5-font-size) }
+// }
+//
+// h6 {
+//   font-size: $h6-font-size;
+//   small { @include small-font($h6-font-size) }
+// }
 
 p {
   margin: 0 0 ($base-spacing / 2);
