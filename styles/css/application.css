@@ -157,10 +157,11 @@ a {
           padding-top: 300px; } }
     #leader .introduction h3 {
       margin-top: 20px; }
-    #leader .introduction .content {
-      background: #fff;
-      margin: 0 -20px;
-      padding: 20px; }
+  #leader .content {
+    background: #fff;
+    margin: 0 -20px;
+    padding: 20px;
+    border-bottom: 1px solid #FFC107; }
   #leader .contact {
     background: #FFC107;
     margin: 0;
@@ -474,7 +475,7 @@ nav.home {
           transform: scale(1.2);
           width: 40%; } }
       #showcase-cpd .browsers .browser:nth-child(2) .browser-content {
-        background: url(/images/CPD-Main-Live/CPD-Home-Top-800.png);
+        background: url(/images/CPD-Main-Live/CPD-Home-Top-800.jpg);
         background-color: white;
         background-position: top;
         background-repeat: no-repeat;

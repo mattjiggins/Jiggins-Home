@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Matt Jiggins - Design, Develop, Deploy | Photography</title>
+
+
+<!-- ID -->
+	<meta name="google-site-verification" content="u9w_z8Q3FZx6jhO-lrxaM8rMnzyMwhqKLG0yAY8GKsA" />
+
+<!-- SEO -->
+	<meta name="description" content="Matt Jiggins: Developer, Photographer" />
+	<meta name="keywords" content="Matt Jiggins, Photography, Street Photography, Developer, WordPress, Frontend, Front-end, Javascript, Designer" />
+
+<!-- Twitter -->
+	<meta name="twitter:card" content="Matt Jiggins: Developer, Photographer.">
+	<meta name="twitter:site" content="@mattjiggins">
+	<meta name="twitter:title" content="Matt Jiggins: Developer, Photographer.">
+	<meta name="twitter:creator" content="@mattjiggins">
+
+<!-- Open Graph -->
+	<meta property="og:title" content="Matt Jiggins: Developer, Photographer." />
+	<meta property="og:type" content="" />
+	<meta property="og:url" content="http://jiggins.ca" />
+	<meta property="og:image" content="/images/Matt-Jiggins-Camera.jpg" />
+	<meta property="og:description" content="" />
+
+<!-- Google -->
+	<link rel="author" href="https://plus.google.com/+MatthewJiggins"/>
+	<link rel="publisher" href="https://plus.google.com/+MatthewJiggins"/>
+	
+<!-- Fonts - Geogrotesque and DIN -->
+	<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/c8cd39af-882e-43fd-8af8-a4f33e6dc58e.css"/>
+
+<!-- Compiled CSS File -->
+	<link rel="stylesheet" href="styles/css/application.css?v=240215-1819" type="text/css" media="screen">
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+		
+		<link rel="icon" type="image/png" href="/images/icon.png">
+		
+</head>
+<body>
+	<section id="leader">
+	<nav class="home" role="navigation">
+		<a href="/">Home</a>
+	</nav>
+
+
+	<div class="introduction">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 600" preserveAspectRatio="none" width="100%" height="100%" > 
+			<g id="Left"> <polygon fill="#D32F2F" points="432.5,600 -1,600 -1,0 599.5,0 "/> </g> 
+			<g id="Right"> <polygon fill="#FABE28" points="900,600 432.5,600 600,0 900,0 "/> </g>
+		</svg>
+		<h2>Process</h2>
+	</div>
+	<div class="contact">
+		<p><a href="https://twitter.com/mattjiggins" target="_blank"><span class="icon-twitter"></span></a> <a href="https://github.com/mattjiggins" target="_blank"><span class="icon-github"></span></a> <a href="mailto:web@jiggins.ca" target="_blank"><span class="icon-envelope-o"></span></a> <a href="tel:6464507817" target="_blank"><span class="icon-phone"></span></a> <a href="https://instagram.com/mattjiggins/" target="_blank"><span class="icon-instagram"></span></a> <a href="https://www.flickr.com/photos/mattjiggins" target="_blank"><span class="icon-flickr"></span></a></p> 
+	</div>
+	<div class="photo-of-matt">
+		<img src="images/Matt-Jiggins-Camera.jpg" class="img-fit img-circle" alt="Matt Jiggins Looking Left">
+	</div>
+	<div class="photo-of-matt">
+		<a href="/about"><img src="images/Matt-Jiggins-Camera.jpg" class="img-fit img-circle" alt="Matt Jiggins with camera."></a>
+	</div>
+	<h1>Details here</h1>
+	
+</section>
+
+
+<section id="twitter">
+	<h2 class="section-title">On <a href="https://twitter.com/mattjiggins" target="_blank">twitter</a></h2>
+	<div id="app-twitterfeed"></div>		
+</section><section id="flickr">
+	
+	<div class="content">
+		<h2 class="section-title">On <a href="https://www.flickr.com/photos/mattjiggins" target="_blank">flickr</a></h2>
+		<div class="flickr-stream">
+			<div id="app-flickrfeed">Loading Flickr</div>
+		</div>
+		
+	</div>
+	
+</section>	
+			
+<!-- hBar Templates -->
+
+	<script id="app-flickr" type="text/x-handlebars-template">
+		<a href="https://www.flickr.com/photos/{{owner}}/{{id}}" class=""  target="_blank">
+			<img class="flickr-photo" src="https://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}_q.jpg" alt="{{title}}">
+		</a>
+	</script>
+	
+	<script id="app-tweets" type="text/x-handlebars-template">
+		<div class="card tweet">
+			<div class="card-copy">
+				<p>{{{formatTweet text}}} &mdash; <small>{{dateFormat created_at}}</small> <a href="http://twitter.com/{{user.screen_name}}/status/{{id_str}}" class="action"><i class="fa fa-retweet"></i></a> </p>
+			</div>
+			
+		</div>
+	</script>
+
+	<script id="app-instagram" type="text/x-handlebars-template">		
+		<a href="{{link}}" class="thumbnail col-xs-1" target="_blank">
+			<img src="{{images.low_resolution.url}}" alt="{{caption.text}}" class="img-responsive" />
+		</a>
+	</script>	
+
+<!-- /End hBar Templates -->	
+			
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="scripts/min/jquery-match-heights-min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="scripts/min/application-base-min.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="scripts/min/application-backbone-min.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+			    app = new BackboneSocialFeeds();
+			
+				photos.fetch({ reset: true });
+				tweets.fetch({ reset: true });
+				// instagrams.fetch({ reset: true });
+				
+			
+			    Backbone.history.start({pushState: false});
+			});
+		</script>
+
+
+		<script>
+		$(function() {
+		  $("#modal-bio").on("change", function() {
+		    if ($(this).is(":checked")) {
+		      $("body").addClass("modal-open");
+		    } else {
+		      $("body").removeClass("modal-open");
+		    }
+		  });
+
+		  $(".modal-window").on("click", function() {
+		    $(".modal-state:checked").prop("checked", false).change();
+		  });
+
+		  $(".modal-inner").on("click", function(e) {
+		    e.stopPropagation();
+			
+		  });
+		});
+		</script>
+
+		<!-- GA -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-1361361-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		  
+		<!-- GS -->
+		<script type="text/javascript">
+		  var _gauges = _gauges || [];
+		  (function() {
+		    var t   = document.createElement('script');
+		    t.type  = 'text/javascript';
+		    t.async = true;
+		    t.id    = 'gauges-tracker';
+		    t.setAttribute('data-site-id', '513361caf5a1f5754e000017');
+		    t.src = '//secure.gaug.es/track.js';
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(t, s);
+		  })();
+		</script>
+		
+	</body>
+</html> 

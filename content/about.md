@@ -8,7 +8,7 @@ If you want to test my skills, or my abilities then you should look elsewhere, I
 
 ###Where I am.
 
-In 2007, after a decade in *"classic" IT management* with the Canadian equivalent of the Labour Party I decided to setup a web/technology consulting business focused on non-Profit and Higher Education. Since 2007 I have had a very successful freelance business. My primary client is <a href="http://www.cpd.utoronto.ca">Continuing Profession Development</a> at the University of Toronto. Working with a single large client has enabled me to help them deliver some really innovative solutions: WordPress network with over 89 sites; NodeJS API linked to their Event Management System; Functional, mobile-friendly websites.
+In 2007, after a decade in *"classic" IT management* with the Canadian equivalent of the Labour Party I decided to setup a web/technology consulting business focused on non-Profit and Higher Education. Since 2007 I have had a very successful freelance business. My primary client is <a href="http://www.cpd.utoronto.ca">Continuing Professional Development</a> at the University of Toronto. Working with a single large client has enabled me to help them deliver some really innovative solutions: WordPress network with over 89 sites; NodeJS API linked to their Event Management System; Functional, mobile-friendly websites.
 
 ###Where I want to be. 
 

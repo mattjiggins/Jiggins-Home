@@ -55,12 +55,15 @@
      h3 {
        margin-top: 20px;
      }
-     .content {
-       background: $white;
-       margin: 0 -20px;
-       padding: 20px;
-     }
+
      
+   }
+
+   .content {
+     background: $white;
+     margin: 0 -20px;
+     padding: 20px;
+     border-bottom: 1px solid $accentColor;
    }
    
    .contact {
