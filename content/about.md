@@ -6,16 +6,19 @@ The best way to know what I can do is by looking at this site, and <a href="mail
 
 ###Where I am.
 
-In 2007, after a decade in *"classic" IT management* with a <a href="http://ndp.ca" target="_blank">progressive Canadian Political party</a>. I decided to setup a web / technology consulting business focused on non-Profits and Higher Education. Since 2007 I have had a very successful freelance business. My primary client is <a href="http://www.cpd.utoronto.ca">Continuing Professional Development</a> at the University of Toronto. Working with a single large client has enabled me to help them deliver some really innovative solutions: WordPress network with over 89 sites; NodeJS API linked to their Event Management System; Functional, mobile-friendly websites.
+In 2007, after a decade in *"classic" IT management* with a <a href="http://ndp.ca" target="_blank">progressive Canadian political party</a>, I decided to setup a web / technology consulting business focused on non-Profits and Higher Education. Since 2007 I have had a very successful freelance business. My primary client is <a href="http://www.cpd.utoronto.ca">Continuing Professional Development</a> at the University of Toronto. Working with a single large client has enabled me to help them deliver some really innovative solutions: WordPress network with over 89 sites; NodeJS API linked to their Event Management System; functional, mobile-friendly websites.
 
 ###Where I want to be. 
 
-For the past 7 years I have been creating, designing, developing, deploying and maintaining websites alone. As technologies advance it becomes more difficult to be an *expert generalist*. So I am now leaving my solo-freelance career and looking to work with developers, designers, intelligent and creative people.
+For the past 7 years I have been creating, designing, developing, deploying and maintaining websites solo, with occasional designer-developer assistance. As technologies advance it becomes more difficult remain the *expert generalist*. I now want to leave my solo-freelance career to work with other developers, designers, intelligent and creative people.
 
 ###What I'm really looking for.
 
-If I'm working for you, I'm passionate about what **you** do. You could be a creative agency with incredible clients; a startup with a great idea and fantastic talent; a non-profit trying to save the world from itself.
+You could be a creative agency with incredible clients; a startup with a great idea and fantastic talent; a non-profit trying to save the world from itself. My only requirement is that you're passionate about your work. When I'm working for you, I'm passionate about what **you** do.
+
+###OK, but give me a for instance.
 
 My experience makes me the perfect choice to be a liaison between designers, developers, marketing, and clients.  Personal development projects, self-directed learning, and conferences ensure that I’m able to understand current trends and best practices.
 
-The geek with a creative mind, the creative mind with a developers sense of order. 
+###Me in one sentence:
+I am the geek with a creative mind, and a creative mind with a developers sense of order. 
