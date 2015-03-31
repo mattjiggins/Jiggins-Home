@@ -8,6 +8,7 @@
     border: none;
     border-bottom: 10px solid $accentColor;
     box-shadow: none;
+    padding-bottom: 1em; 
   }
 
   @include outer-container;

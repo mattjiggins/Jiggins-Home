@@ -1,7 +1,7 @@
 #twitter {
   $shift: new-breakpoint(min-width 1200px);
   
-  @include outer-container(100%);
+  @include outer-container(1600px);
   padding: 0;
   
   @include media($shift) {

@@ -567,7 +567,8 @@ nav.home {
   #showcase-smaller .card {
     border: none;
     border-bottom: 10px solid #FFC107;
-    box-shadow: none; }
+    box-shadow: none;
+    padding-bottom: 1em; }
   #showcase-smaller::after {
     clear: both;
     content: "";
@@ -577,7 +578,7 @@ nav.home {
       padding: 30px 10px 50px 10px; } }
 
 #twitter {
-  max-width: 100%;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding: 0; }
