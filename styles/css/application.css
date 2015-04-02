@@ -162,6 +162,11 @@ a {
     margin: 0 -20px;
     padding: 20px;
     border-bottom: 1px solid #FFC107; }
+  #leader .content-internal {
+    background: #fff;
+    margin: 0;
+    padding: 20px;
+    border-bottom: 1px solid #FFC107; }
   #leader .contact {
     background: #FFC107;
     margin: 0;

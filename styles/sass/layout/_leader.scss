@@ -65,7 +65,14 @@
      padding: 20px;
      border-bottom: 1px solid $accentColor;
    }
-   
+
+   .content-internal {
+     background: $white;
+     margin: 0;
+     padding: 20px;
+     border-bottom: 1px solid $accentColor;
+   }
+      
    .contact {
      background: $accentColor;
      margin: 0;
