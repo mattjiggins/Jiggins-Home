@@ -69,7 +69,9 @@
 	<script id="app-tweets" type="text/x-handlebars-template">
 		<div class="card tweet">
 			<div class="card-copy">
-				<p>{{{formatTweet text}}} &mdash; <small>{{dateFormat created_at}}</small> <a href="http://twitter.com/{{user.screen_name}}/status/{{id_str}}" class="action"><i class="fa fa-retweet"></i></a> </p>
+
+					<p>{{{formatTweet text retweeted_status}}} &mdash; <small>{{dateFormat created_at}}</small> <a href="http://twitter.com/{{user.screen_name}}/status/{{id_str}}" class="action"><i class="fa fa-retweet"></i></a> </p>
+				
 			</div>
 			
 		</div>

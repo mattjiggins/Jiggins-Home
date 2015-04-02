@@ -33,7 +33,13 @@ TweetView = Backbone.View.extend({
 
 allTweets = TweetView.extend({ });
 
-Handlebars.registerHelper('formatTweet', function(tweet) {
+Handlebars.registerHelper('formatTweet', function(tweet,retweet) {
+	
+	// OK , when you retweet the char limit doesnt exist, so sometimes stuff gets cut - ie the urls - so this reconstructs a tweet
+	if (retweet) {
+		var users = tweet.match(/@\w+/g);
+		var tweet = "RT "+users[0]+": "+retweet.text;
+	}
 
 	// Thanks to @rem for doing all the regex!
 	// Borrowed from https://github.com/remy/twitterlib/blob/master/twitterlib.js
