@@ -89,6 +89,16 @@ a {
     color: #2c5999;
     outline: none; }
 
+.js-loading, .javascript-msg {
+  text-align: center;
+  padding: 20px; }
+
+.no-js .js-loading {
+  display: none; }
+
+.js .javascript-msg {
+  display: none; }
+
 #leader {
   max-width: 68em;
   margin-left: auto;
@@ -604,6 +614,7 @@ nav.home {
     margin: 0 18px; }
 
 #flickr {
+  margin-top: 20px;
   padding: 0px; }
   #flickr .flickr-stream .flickr-photo {
     margin: 0px;

@@ -1,6 +1,7 @@
 #flickr {
   $medium: new-breakpoint(min-width 767px);
   $large: new-breakpoint(min-width 1400px);
+  margin-top: 20px;
 
   padding: 0px;
   .flickr-stream {
