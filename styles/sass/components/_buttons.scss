@@ -1,0 +1,10 @@
+.button, button {
+ @include button(flat, $accentColor);
+ display: inline-block;
+ font-size: .7em;
+ line-height: $base-line-height;
+ margin-bottom: .3em;
+ margin-right: 0.5em;
+ outline: none;
+ padding: .3em 1em;
+}

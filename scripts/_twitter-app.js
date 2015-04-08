@@ -13,7 +13,7 @@ tweets = new TweetsCollection([
 // VIEWS
 
 TweetView = Backbone.View.extend({		
-	className: 'tweets',
+	className: 'cards',
 
 	template: Handlebars.compile($("#app-tweets").html()),
 
@@ -26,14 +26,20 @@ TweetView = Backbone.View.extend({
         _.each(tweets.models, function (tweets) {
             $(this.el).append(this.template(tweets.attributes));
         }, this);
-		
 		return this;
+		
 	},
 });
 
 allTweets = TweetView.extend({ });
 
-Handlebars.registerHelper('formatTweet', function(tweet) {
+Handlebars.registerHelper('formatTweet', function(tweet,retweet) {
+	
+	// OK , when you retweet the char limit doesnt exist, so sometimes stuff gets cut - ie the urls - so this reconstructs a tweet
+	if (retweet) {
+		var users = tweet.match(/@\w+/g);
+		var tweet = "RT "+users[0]+": "+retweet.text;
+	}
 
 	// Thanks to @rem for doing all the regex!
 	// Borrowed from https://github.com/remy/twitterlib/blob/master/twitterlib.js
@@ -71,6 +77,5 @@ Handlebars.registerHelper('formatTweet', function(tweet) {
 });
 
 Handlebars.registerHelper('dateFormat', function(tweetDate) {
-	//return moment(tweetDate, 'dd MMM DD HH:mm:ss ZZ YYYY', 'en').format("MMM DD, YYYY hh:mm:ss A");
 	return moment(tweetDate, 'dd MMM DD HH:mm:ss ZZ YYYY', 'en').fromNow();
 });
