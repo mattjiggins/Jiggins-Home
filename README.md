@@ -1,6 +1,11 @@
 Jiggins-Home
 ============
 
-New Home for my development work and photography.
+New Home for my development work.
 
-*All passwords, feed urls, tokens are public and read-only.*
+Uses:
+
+- Codekit "kit" language to import headers/content/footers
+- Sass
+
+Feeds for flickr and twitter are based on my "feeds" git , and are BackboneJS and PHP.
