@@ -4,7 +4,7 @@ Photos = Backbone.Model.extend({});
 
 PhotosCollection = Backbone.Collection.extend({
     model:Photos,
-    url:"/inc/flickr.php"
+    url:"http://feeds.jiggins.ca/inc/flickr.php"
 });
 
 photos = new PhotosCollection([

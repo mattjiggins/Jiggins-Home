@@ -4,7 +4,7 @@ Tweets = Backbone.Model.extend({});
 
 TweetsCollection = Backbone.Collection.extend({
     model:Tweets,
-    url:"/inc/tweets.php"
+    url:"http://feeds.jiggins.ca/inc/tweets.php"
 });
 
 tweets = new TweetsCollection([
